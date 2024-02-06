@@ -49,7 +49,7 @@ public class MainApp extends Application {
 	public void nazadNaMenu() { 
 		 try {
 		        Parent menuRoot = FXMLLoader.load(getClass().getResource("/fxml/Menu.fxml"));
-		        bp.setCenter(((BorderPane) menuRoot).getCenter());  //da se promeni samo centralni deo prozora, a ne i ostatak
+		        bp.setCenter(((BorderPane) menuRoot).getCenter()); 
 		    } catch (IOException e) {
 		        e.printStackTrace();
 		    }
