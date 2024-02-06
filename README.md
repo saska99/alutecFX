@@ -1,0 +1,2 @@
+- clone the project
+- import it into eclipse as a maven project
