@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane style="-fx-background-color: #848482;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.uvozController.ArtikliUvozController">
+   <Label alignment="CENTER" layoutX="93.0" layoutY="64.0" prefHeight="47.0" prefWidth="344.0" text="Dodavanje artikala u uvoz">
+      <font>
+         <Font name="Elephant" size="20.0" />
+      </font>
+   </Label>
+   <Button layoutX="166.0" layoutY="424.0" onAction="#dodajArtikalUUvoz" prefHeight="34.0" prefWidth="123.0" style="-fx-background-color: #551606;" text="Dodaj" textFill="#f8f7f7">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Button>
+   <Label layoutX="83.0" layoutY="149.0" prefHeight="34.0" prefWidth="144.0" text="Izaberi uvoz:">
+      <font>
+         <Font name="Elephant" size="16.0" />
+      </font>
+   </Label>
+   <Label layoutX="83.0" layoutY="196.0" prefHeight="34.0" prefWidth="144.0" text="Izaberi artikal:">
+      <font>
+         <Font name="Elephant" size="16.0" />
+      </font>
+   </Label>
+   <ComboBox fx:id="uvozCombo" layoutX="238.0" layoutY="151.0" prefHeight="34.0" prefWidth="164.0" />
+   <ComboBox fx:id="artikalCombo" layoutX="238.0" layoutY="198.0" prefHeight="34.0" prefWidth="164.0" />
+   <Label layoutX="83.0" layoutY="250.0" prefHeight="34.0" prefWidth="144.0" text="Naim:">
+      <font>
+         <Font name="Elephant" size="16.0" />
+      </font>
+   </Label>
+   <Label layoutX="83.0" layoutY="297.0" prefHeight="34.0" prefWidth="144.0" text="Neto:">
+      <font>
+         <Font name="Elephant" size="16.0" />
+      </font>
+   </Label>
+   <Label layoutX="83.0" layoutY="347.0" prefHeight="34.0" prefWidth="144.0" text="Kom:">
+      <font>
+         <Font name="Elephant" size="16.0" />
+      </font>
+   </Label>
+   <!-- Label za prikazivanje poruka korisnicimaa-->
+   <Label fx:id="labelPoruka" layoutX="83.0" layoutY="482.0" prefHeight="47.0" prefWidth="439.0" text="" textFill="#0d0d0d">
+      <font>
+         <Font size="16.0" />
+      </font>
+   </Label>
+   <TextField fx:id="naimTF" layoutX="238.0" layoutY="252.0" prefHeight="34.0" prefWidth="164.0" style="-fx-background-color: silver;" />
+   <TextField fx:id="komTF" layoutX="238.0" layoutY="349.0" prefHeight="34.0" prefWidth="164.0" style="-fx-background-color: silver;" />
+   <TextField fx:id="netoTF" layoutX="238.0" layoutY="299.0" prefHeight="34.0" prefWidth="164.0" style="-fx-background-color: silver;" />
+	
+</AnchorPane>

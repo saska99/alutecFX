@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="bp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="582.0" prefWidth="770.0" style="-fx-background-color: #551606;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.main.MainApp">
+   <left>
+      <VBox prefHeight="570.0" prefWidth="253.0" style="-fx-background-color: #551606;" BorderPane.alignment="CENTER">
+         <children>
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#nazadNaMenu" prefHeight="61.0" prefWidth="253.0" style="-fx-border-color: #70777B; -fx-border-width: 0px 0px 0px 0px; -fx-background-color: transparent;" text="A L U T E C" textFill="SILVER">
+               <font>
+                  <Font name="Serif Bold" size="27.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#nazadNaMenu" prefHeight="70.0" prefWidth="263.0" style="-fx-background-color: #4B0C00;" text="UVOZ" textFill="#f5f4f4">
+               <font>
+                  <Font name="Serif Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#otvoriPregledUvoza" prefHeight="65.0" style="-fx-border-color: #551606; -fx-border-width: 1px 0px 1px 0px; -fx-background-color: transparent;" text="Pregled uvoza" textFill="#fffdfd">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="50.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#otvoriNoviUvoz" prefHeight="65.0" style="-fx-border-color: #551606; -fx-border-width: 0px 0px 1px 0px; -fx-background-color: transparent;" text="Dodaj novi uvoz" textFill="#fffdfd">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="90.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#otvoriNoviArtikal" prefHeight="65.0" style="-fx-border-color: #551606; -fx-border-width: 0px 0px 1px 0px; -fx-background-color: transparent;" text="Dodaj novi artikal" textFill="#fffdfd">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="130.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#otvoriArtikleUUvoz" prefHeight="65.0" style="-fx-border-color: #551606; -fx-border-width: 0px 0px 1px 0px; -fx-background-color: transparent;" text="Dodaj artikle u uvoz" textFill="#fffdfd">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="170.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#otvoriObradaArtikala" prefHeight="65.0" style="-fx-border-color: #551606; -fx-border-width: 0px 0px 1px 0px; -fx-background-color: transparent;" text="Obrada artikala" textFill="#fffdfd">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#nazadNaMenu" prefHeight="70.0" prefWidth="263.0" style="-fx-background-color: #4B0C00;" text="MAGACIN" textFill="#f5f4f4">
+               <font>
+                  <Font name="Serif Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="210.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#otvoriMagacin" prefHeight="65.0" style="-fx-border-color: #551606; -fx-border-width: 1px 0px 1px 0px; -fx-background-color: transparent;" text="Pregled magacina" textFill="#fffdfd">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#nazadNaMenu" prefHeight="70.0" prefWidth="263.0" style="-fx-background-color: #4B0C00;" text="IZVOZ" textFill="#fcfcfc">
+               <font>
+                  <Font name="Serif Bold" size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="250.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#otvoriNoviIzvoz" prefHeight="65.0" style="-fx-border-color: #551606; -fx-border-width: 1px 0px 1px 0px; -fx-background-color: transparent;" text="Dodaj izvoz" textFill="#fffdfd">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="290.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#otvoriArtikliIzvoz" prefHeight="65.0" style="-fx-border-color: #551606; -fx-border-width: 0px 0px 1px 0px; -fx-background-color: transparent;" text="Dodaj artikle u izvoz" textFill="#fffdfd">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="330.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#otvoriPregledIzvoz" prefHeight="65.0" style="-fx-border-color: #551606; -fx-border-width: 0px 0px 1px 0px; -fx-background-color: transparent;" text="Pregled izvoza" textFill="#fffdfd">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="70.0" />
+            <Button layoutX="10.0" layoutY="370.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#exit" prefHeight="65.0" style="-fx-border-color: #70777B; -fx-border-width: 0px 0px 1px 0px; -fx-background-color: transparent;" text="EXIT" textFill="#f8f7f7">
+               <font>
+                  <Font name="Serif Regular" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane fx:id="ap" style="-fx-background-color: #848482;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="256.0" fitWidth="536.0" layoutX="21.0" layoutY="181.0" nodeOrientation="INHERIT" opacity="0.84" pickOnBounds="true" preserveRatio="true">
+               <viewport>
+                  <Rectangle2D />
+               </viewport>
+               <image>
+                  <Image url="@logo.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="MOVE" />
+               </cursor>
+               <effect>
+                  <DropShadow height="53.23" radius="26.1175" spread="0.17" width="53.24" />
+               </effect>
+            </ImageView>
+            
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <Label prefHeight="49.0" prefWidth="28.0" BorderPane.alignment="CENTER" />
+   </top>
+</BorderPane>
